@@ -3,23 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>navbar</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">News</a>
-        <div class="dropdown">
-            <div class="drop-link"><a>Services</a></div>
-            <div class="dropdown-content">
-                <a href="#">web design</a>
-                <a href="#">product</a>
-                <a href="#">shop</a>
-            </div>
-        </div>
-        <a href="#">About</a>
+    <nav role="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Services</a>
+                <ul class="dropdown">
+                    <li><a href="#">web design</a></li>
+                    <li><a href="#">app design</a></li>
+                    <li><a href="#">digital</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a>
+                <ul class="dropdown">
+                    <li><a href="#">web design</a></li>
+                    <li><a href="#">app design</a></li>
+                    <li><a href="#">digital</a></li>
+                </ul>
+            </li>
+        </ul>
     </nav>
 
     <!-- <main>

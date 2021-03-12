@@ -11,44 +11,58 @@ body {
     font-family: "@Microsoft YaHei Light";
 }
 
-nav {
-    background: #121212;
-    overflow: hidden;
-    z-index: 1;
+nav a {
+    text-decoration: none;
 }
 
-nav a {
+ul {
+    /* border: 1px dashed blue; */
+    list-style: none;
+    
+}
+
+li {
+    position: relative;
+    display: block;
     float: left;
-    text-decoration: none;
+    padding: 1rem;
+    background: lightslategray;
+    transition: all 1s ease;
+}
+
+li a {
     color: white;
-    font-size: large;
-    text-align: center;
-    padding: 10px 20px;
+    
 }
-nav a:hover {
-    background: #333;
+
+li:hover,
+li:focus-within {
+  background: rgb(74, 84, 94);
+  cursor: pointer;
 }
-.dropdown {
-    /* border: 1px dashed red; */
-    float: left;
-    /* overflow: hidden; */
-}
-.drop-link {
-    overflow: hidden;
-    /* border: 1px dashed yellow; */
-}  
-.dropdown-content {
-    display: block;
+
+ul li ul {
+    display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    box-shadow: 1px 1px 10px #f0f0f0;
-    border-radius: 10px;
-    min-width: 160px;
-    opacity: 1;
+    left: 0;
+    min-width: 8rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #fafafa;
+    box-shadow: 1px 1px 5px hsl(0, 0%, 90%);
+    
 }
-.dropdown-content a {
-    display: block;
-    float: none;
+ul li ul li {
     color: black;
-    text-align: left;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul {
+    display: block;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
 }
