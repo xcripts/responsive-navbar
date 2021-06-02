@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>navbar</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-
-    <nav role="navigation">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Services</a>
-                <ul class="dropdown">
-                    <li><a href="#">web design</a></li>
-                    <li><a href="#">app design</a></li>
-                    <li><a href="#">digital</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Contact</a>
-                <ul class="dropdown">
-                    <li><a href="#">web design</a></li>
-                    <li><a href="#">app design</a></li>
-                    <li><a href="#">digital</a></li>
-                </ul>
-            </li>
-        </ul>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <nav class="top-nav responsive">
+      <a href="#home" class="active">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <div class="dropdown">
+        <button class="drop-btn">
+          Shopping
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="drop-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <a href="#about">About</a>
+      <a
+        href="javascript:void(0);"
+        style="font-size: 15px"
+        class="icon"
+        onclick="myFunction()"
+        >&#9776;
+      </a>
     </nav>
 
     <!-- <main>
         
     </main> -->
-</body>
+  </body>
 </html>
